@@ -1,0 +1,1601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* gympointmobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gympointmobTests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		14ECA2EAB94D62CCA226B68A /* libPods-gympointmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB47A1FA6571CAFFCF4CFC /* libPods-gympointmob.a */; };
+		19E15E63F27A4FFDB9B52933 /* libPods-gympointmob-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCCE73DB7BD4ACAAC1B047D /* libPods-gympointmob-tvOS.a */; };
+		24C9E0ECE0ECE8C6A2726A63 /* libPods-gympointmob-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28468D5368F1C106F5C8589C /* libPods-gympointmob-tvOSTests.a */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* gympointmobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gympointmobTests.m */; };
+		8970F71062AEECF86E4F3A27 /* libPods-gympointmobTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D091FD3E4730E394EAB1B58 /* libPods-gympointmobTests.a */; };
+		C0ED393323A9CF9900A6A139 /* libDoubleConversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38F623A9CF8100A6A139 /* libDoubleConversion.a */; };
+		C0ED393423A9CF9900A6A139 /* libFBReactNativeSpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38F823A9CF8100A6A139 /* libFBReactNativeSpec.a */; };
+		C0ED393523A9CF9900A6A139 /* libFolly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FA23A9CF8100A6A139 /* libFolly.a */; };
+		C0ED393623A9CF9900A6A139 /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FC23A9CF8100A6A139 /* libglog.a */; };
+		C0ED393723A9CF9900A6A139 /* libPods-gympointmob-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390023A9CF8100A6A139 /* libPods-gympointmob-tvOS.a */; };
+		C0ED393823A9CF9900A6A139 /* libPods-gympointmob-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390223A9CF8100A6A139 /* libPods-gympointmob-tvOSTests.a */; };
+		C0ED393923A9CF9900A6A139 /* libPods-gympointmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FE23A9CF8100A6A139 /* libPods-gympointmob.a */; };
+		C0ED393A23A9CF9900A6A139 /* libPods-gympointmobTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390423A9CF8100A6A139 /* libPods-gympointmobTests.a */; };
+		C0ED393B23A9CF9900A6A139 /* libRCTTypeSafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390623A9CF8100A6A139 /* libRCTTypeSafety.a */; };
+		C0ED393C23A9CF9900A6A139 /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390823A9CF8100A6A139 /* libReact-Core.a */; };
+		C0ED393D23A9CF9900A6A139 /* libReact-CoreModules.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390A23A9CF8100A6A139 /* libReact-CoreModules.a */; };
+		C0ED393E23A9CF9900A6A139 /* libReact-cxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390C23A9CF8100A6A139 /* libReact-cxxreact.a */; };
+		C0ED393F23A9CF9900A6A139 /* libReact-jsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390E23A9CF8100A6A139 /* libReact-jsi.a */; };
+		C0ED394023A9CF9900A6A139 /* libReact-jsiexecutor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391023A9CF8100A6A139 /* libReact-jsiexecutor.a */; };
+		C0ED394123A9CF9900A6A139 /* libReact-jsinspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391223A9CF8100A6A139 /* libReact-jsinspector.a */; };
+		C0ED394223A9CF9A00A6A139 /* libReact-RCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391423A9CF8100A6A139 /* libReact-RCTActionSheet.a */; };
+		C0ED394323A9CF9A00A6A139 /* libReact-RCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391623A9CF8100A6A139 /* libReact-RCTAnimation.a */; };
+		C0ED394423A9CF9A00A6A139 /* libReact-RCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391823A9CF8100A6A139 /* libReact-RCTBlob.a */; };
+		C0ED394523A9CF9A00A6A139 /* libReact-RCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391A23A9CF8100A6A139 /* libReact-RCTImage.a */; };
+		C0ED394623A9CF9A00A6A139 /* libReact-RCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391C23A9CF8100A6A139 /* libReact-RCTLinking.a */; };
+		C0ED394723A9CF9A00A6A139 /* libReact-RCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391E23A9CF8100A6A139 /* libReact-RCTNetwork.a */; };
+		C0ED394823A9CF9A00A6A139 /* libReact-RCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392023A9CF8100A6A139 /* libReact-RCTSettings.a */; };
+		C0ED394923A9CF9A00A6A139 /* libReact-RCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392223A9CF8100A6A139 /* libReact-RCTText.a */; };
+		C0ED394A23A9CF9A00A6A139 /* libReact-RCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392423A9CF8100A6A139 /* libReact-RCTVibration.a */; };
+		C0ED394B23A9CF9A00A6A139 /* libReactCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392623A9CF8100A6A139 /* libReactCommon.a */; };
+		C0ED394C23A9CF9A00A6A139 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392823A9CF8100A6A139 /* libRNGestureHandler.a */; };
+		C0ED394D23A9CF9A00A6A139 /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392A23A9CF8100A6A139 /* libRNReanimated.a */; };
+		C0ED394E23A9CF9A00A6A139 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392C23A9CF8100A6A139 /* libRNVectorIcons.a */; };
+		C0ED394F23A9CF9A00A6A139 /* libYoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392E23A9CF8100A6A139 /* libYoga.a */; };
+		C0ED395023A9CFD400A6A139 /* libDoubleConversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38F623A9CF8100A6A139 /* libDoubleConversion.a */; };
+		C0ED395123A9CFD400A6A139 /* libFBReactNativeSpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38F823A9CF8100A6A139 /* libFBReactNativeSpec.a */; };
+		C0ED395223A9CFD400A6A139 /* libFolly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FA23A9CF8100A6A139 /* libFolly.a */; };
+		C0ED395323A9CFD400A6A139 /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FC23A9CF8100A6A139 /* libglog.a */; };
+		C0ED395423A9CFD400A6A139 /* libPods-gympointmob-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390023A9CF8100A6A139 /* libPods-gympointmob-tvOS.a */; };
+		C0ED395523A9CFD400A6A139 /* libPods-gympointmob-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390223A9CF8100A6A139 /* libPods-gympointmob-tvOSTests.a */; };
+		C0ED395623A9CFD400A6A139 /* libPods-gympointmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED38FE23A9CF8100A6A139 /* libPods-gympointmob.a */; };
+		C0ED395723A9CFD400A6A139 /* libPods-gympointmobTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390423A9CF8100A6A139 /* libPods-gympointmobTests.a */; };
+		C0ED395823A9CFD400A6A139 /* libRCTTypeSafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390623A9CF8100A6A139 /* libRCTTypeSafety.a */; };
+		C0ED395923A9CFD400A6A139 /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390823A9CF8100A6A139 /* libReact-Core.a */; };
+		C0ED395A23A9CFD400A6A139 /* libReact-CoreModules.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390A23A9CF8100A6A139 /* libReact-CoreModules.a */; };
+		C0ED395B23A9CFD400A6A139 /* libReact-cxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390C23A9CF8100A6A139 /* libReact-cxxreact.a */; };
+		C0ED395C23A9CFD400A6A139 /* libReact-jsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED390E23A9CF8100A6A139 /* libReact-jsi.a */; };
+		C0ED395D23A9CFD400A6A139 /* libReact-jsiexecutor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391023A9CF8100A6A139 /* libReact-jsiexecutor.a */; };
+		C0ED395E23A9CFD400A6A139 /* libReact-jsinspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391223A9CF8100A6A139 /* libReact-jsinspector.a */; };
+		C0ED395F23A9CFD400A6A139 /* libReact-RCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391423A9CF8100A6A139 /* libReact-RCTActionSheet.a */; };
+		C0ED396023A9CFD400A6A139 /* libReact-RCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391623A9CF8100A6A139 /* libReact-RCTAnimation.a */; };
+		C0ED396123A9CFD400A6A139 /* libReact-RCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391823A9CF8100A6A139 /* libReact-RCTBlob.a */; };
+		C0ED396223A9CFD400A6A139 /* libReact-RCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391A23A9CF8100A6A139 /* libReact-RCTImage.a */; };
+		C0ED396323A9CFD400A6A139 /* libReact-RCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391C23A9CF8100A6A139 /* libReact-RCTLinking.a */; };
+		C0ED396423A9CFD400A6A139 /* libReact-RCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED391E23A9CF8100A6A139 /* libReact-RCTNetwork.a */; };
+		C0ED396523A9CFD400A6A139 /* libReact-RCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392023A9CF8100A6A139 /* libReact-RCTSettings.a */; };
+		C0ED396623A9CFD400A6A139 /* libReact-RCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392223A9CF8100A6A139 /* libReact-RCTText.a */; };
+		C0ED396723A9CFD400A6A139 /* libReact-RCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392423A9CF8100A6A139 /* libReact-RCTVibration.a */; };
+		C0ED396823A9CFD400A6A139 /* libReactCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392623A9CF8100A6A139 /* libReactCommon.a */; };
+		C0ED396923A9CFD400A6A139 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392823A9CF8100A6A139 /* libRNGestureHandler.a */; };
+		C0ED396A23A9CFD400A6A139 /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392A23A9CF8100A6A139 /* libRNReanimated.a */; };
+		C0ED396B23A9CFD400A6A139 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392C23A9CF8100A6A139 /* libRNVectorIcons.a */; };
+		C0ED396C23A9CFD400A6A139 /* libYoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED392E23A9CF8100A6A139 /* libYoga.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = gympointmob;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "gympointmob-tvOS";
+		};
+		C0ED38F523A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FFB7B2992BB53405E6B771A5BA1E97D;
+			remoteInfo = DoubleConversion;
+		};
+		C0ED38F723A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABFEEA82A6C346B22843FBE0B0582182;
+			remoteInfo = FBReactNativeSpec;
+		};
+		C0ED38F923A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06489499588BFA8FD5E63DD6375CD533;
+			remoteInfo = Folly;
+		};
+		C0ED38FB23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CA7A9404CCDD6BA22C97F8348CE3209;
+			remoteInfo = glog;
+		};
+		C0ED38FD23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0768EC6A3AB3572D66CFABAF292B0F6B;
+			remoteInfo = "Pods-gympointmob";
+		};
+		C0ED38FF23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE659549281D73C0A82DDF7C630A3010;
+			remoteInfo = "Pods-gympointmob-tvOS";
+		};
+		C0ED390123A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99256D246F08B149EF682858688EB608;
+			remoteInfo = "Pods-gympointmob-tvOSTests";
+		};
+		C0ED390323A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEA1484A359AB39153FF1D8CAC50C300;
+			remoteInfo = "Pods-gympointmobTests";
+		};
+		C0ED390523A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F958876A082BF810B342435CE3FB5AF6;
+			remoteInfo = RCTTypeSafety;
+		};
+		C0ED390723A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD71E2539823621820F84384064C253A;
+			remoteInfo = "React-Core";
+		};
+		C0ED390923A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6771D231F4C8C5976470A369C474B32E;
+			remoteInfo = "React-CoreModules";
+		};
+		C0ED390B23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37592FDAD45752511010F4B06AC57355;
+			remoteInfo = "React-cxxreact";
+		};
+		C0ED390D23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9F334F2E90E3EE462FC4192AF5C03BD;
+			remoteInfo = "React-jsi";
+		};
+		C0ED390F23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2E7C88DFCD460A4B46B913ADEB8A641;
+			remoteInfo = "React-jsiexecutor";
+		};
+		C0ED391123A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2577F299FCB0A19824FE989BE77B8E8F;
+			remoteInfo = "React-jsinspector";
+		};
+		C0ED391323A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 73F8A95B79671F501F31EA4F1D04AA8B;
+			remoteInfo = "React-RCTActionSheet";
+		};
+		C0ED391523A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE7B9294FF05AAFD1653E2104E10844A;
+			remoteInfo = "React-RCTAnimation";
+		};
+		C0ED391723A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F71EBF73F354B475D465FF6DE9A66707;
+			remoteInfo = "React-RCTBlob";
+		};
+		C0ED391923A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEDBF403E8E0B3885E65C2741B536BC5;
+			remoteInfo = "React-RCTImage";
+		};
+		C0ED391B23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 802121F5B756ACBFDD6D08C36246DADD;
+			remoteInfo = "React-RCTLinking";
+		};
+		C0ED391D23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A68E5A9B69A3BA0FD52CAF7A354EC93B;
+			remoteInfo = "React-RCTNetwork";
+		};
+		C0ED391F23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 269BE773C9482484B70949A40F4EA525;
+			remoteInfo = "React-RCTSettings";
+		};
+		C0ED392123A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6A16705C69FC7DE11C2469A4A0F8358;
+			remoteInfo = "React-RCTText";
+		};
+		C0ED392323A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C1A919103EAC9813D236486C34FC0A21;
+			remoteInfo = "React-RCTVibration";
+		};
+		C0ED392523A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5C775614AC76D44CECB6BE08B022F1F;
+			remoteInfo = ReactCommon;
+		};
+		C0ED392723A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F65F9361F2069CF9E9D751272968DE4;
+			remoteInfo = RNGestureHandler;
+		};
+		C0ED392923A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C777CF2FB1E39A45CBBDB54E8693F471;
+			remoteInfo = RNReanimated;
+		};
+		C0ED392B23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8998273719FDD789E6F9C7541AFD0B33;
+			remoteInfo = RNVectorIcons;
+		};
+		C0ED392D23A9CF8100A6A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65D0A19C165FA1126B1360680FE6DB12;
+			remoteInfo = Yoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* gympointmobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gympointmobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* gympointmobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gympointmobTests.m; sourceTree = "<group>"; };
+		020FFE99CB20A65F998BE1DD /* Pods-gympointmob-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob-tvOS.release.xcconfig"; path = "Target Support Files/Pods-gympointmob-tvOS/Pods-gympointmob-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		02DE288369B44D4490BB3CBB /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* gympointmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gympointmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gympointmob/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = gympointmob/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gympointmob/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gympointmob/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = gympointmob/main.m; sourceTree = "<group>"; };
+		16966DF4358A4A3CB0E53A5B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		28468D5368F1C106F5C8589C /* libPods-gympointmob-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gympointmob-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* gympointmob-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gympointmob-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* gympointmob-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gympointmob-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FB47A1FA6571CAFFCF4CFC /* libPods-gympointmob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gympointmob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DCD211424D169AAF2F1C49 /* Pods-gympointmob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob.release.xcconfig"; path = "Target Support Files/Pods-gympointmob/Pods-gympointmob.release.xcconfig"; sourceTree = "<group>"; };
+		35C0A1A1CCB4472E9F7E87BB /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		3AECAA3630434DE184C9FF6D /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		3DCCE73DB7BD4ACAAC1B047D /* libPods-gympointmob-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gympointmob-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C5FFC919F51DEFB8A12D82 /* Pods-gympointmobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmobTests.debug.xcconfig"; path = "Target Support Files/Pods-gympointmobTests/Pods-gympointmobTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D091FD3E4730E394EAB1B58 /* libPods-gympointmobTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gympointmobTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		532DFCF498A344B5ADC46FCC /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		6DC4A12475724C58BB15B772 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		77BD909EF191461A8808E573 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		7D87BE91EDBD4FF59BFA086A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		9EF970FE25934BEF881414B3 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		A880CD8CFA7844A89ABE9F2A /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		C04582EF7F404FAD8CDA41FC /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		C0ED38CD23A9CF8000A6A139 /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Target Support Files"; path = "Pods/Target Support Files"; sourceTree = "<group>"; };
+		C0ED38CE23A9CF8000A6A139 /* glog */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glog; path = Pods/glog; sourceTree = "<group>"; };
+		C0ED38CF23A9CF8000A6A139 /* DoubleConversion */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DoubleConversion; path = Pods/DoubleConversion; sourceTree = "<group>"; };
+		C0ED38D023A9CF8000A6A139 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; name = Manifest.lock; path = Pods/Manifest.lock; sourceTree = "<group>"; };
+		C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		C0ED392F23A9CF8300A6A139 /* Local Podspecs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Local Podspecs"; path = "Pods/Local Podspecs"; sourceTree = "<group>"; };
+		C0ED393023A9CF8300A6A139 /* boost-for-react-native */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "boost-for-react-native"; path = "Pods/boost-for-react-native"; sourceTree = "<group>"; };
+		C0ED393123A9CF8300A6A139 /* Folly */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Folly; path = Pods/Folly; sourceTree = "<group>"; };
+		C0ED393223A9CF8400A6A139 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = Pods/Headers; sourceTree = "<group>"; };
+		D1B70CCB23BFD4D06D94EF35 /* Pods-gympointmobTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmobTests.release.xcconfig"; path = "Target Support Files/Pods-gympointmobTests/Pods-gympointmobTests.release.xcconfig"; sourceTree = "<group>"; };
+		D50E75E6597D4856B0D11E8F /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		D5401CDD15E67983D3758137 /* Pods-gympointmob-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-gympointmob-tvOSTests/Pods-gympointmob-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E00412CF0045E79D386491 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		E167A7ECAABB4391A3F259C1 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		E61FFCCA83964299B51B101F /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EE42049622CC4F7DFB1EAC42 /* Pods-gympointmob-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-gympointmob-tvOS/Pods-gympointmob-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F4AF0D1291EA3FAC5F6DF8BF /* Pods-gympointmob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob.debug.xcconfig"; path = "Target Support Files/Pods-gympointmob/Pods-gympointmob.debug.xcconfig"; sourceTree = "<group>"; };
+		F5991C54E3B343358ECC2072 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		FBCFE5377340D62EEAD50168 /* Pods-gympointmob-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gympointmob-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-gympointmob-tvOSTests/Pods-gympointmob-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0ED395023A9CFD400A6A139 /* libDoubleConversion.a in Frameworks */,
+				C0ED395123A9CFD400A6A139 /* libFBReactNativeSpec.a in Frameworks */,
+				C0ED395223A9CFD400A6A139 /* libFolly.a in Frameworks */,
+				C0ED395323A9CFD400A6A139 /* libglog.a in Frameworks */,
+				C0ED395423A9CFD400A6A139 /* libPods-gympointmob-tvOS.a in Frameworks */,
+				C0ED395523A9CFD400A6A139 /* libPods-gympointmob-tvOSTests.a in Frameworks */,
+				C0ED395623A9CFD400A6A139 /* libPods-gympointmob.a in Frameworks */,
+				C0ED395723A9CFD400A6A139 /* libPods-gympointmobTests.a in Frameworks */,
+				C0ED395823A9CFD400A6A139 /* libRCTTypeSafety.a in Frameworks */,
+				C0ED395923A9CFD400A6A139 /* libReact-Core.a in Frameworks */,
+				C0ED395A23A9CFD400A6A139 /* libReact-CoreModules.a in Frameworks */,
+				C0ED395B23A9CFD400A6A139 /* libReact-cxxreact.a in Frameworks */,
+				C0ED395C23A9CFD400A6A139 /* libReact-jsi.a in Frameworks */,
+				C0ED395D23A9CFD400A6A139 /* libReact-jsiexecutor.a in Frameworks */,
+				C0ED395E23A9CFD400A6A139 /* libReact-jsinspector.a in Frameworks */,
+				C0ED395F23A9CFD400A6A139 /* libReact-RCTActionSheet.a in Frameworks */,
+				C0ED396023A9CFD400A6A139 /* libReact-RCTAnimation.a in Frameworks */,
+				C0ED396123A9CFD400A6A139 /* libReact-RCTBlob.a in Frameworks */,
+				C0ED396223A9CFD400A6A139 /* libReact-RCTImage.a in Frameworks */,
+				C0ED396323A9CFD400A6A139 /* libReact-RCTLinking.a in Frameworks */,
+				C0ED396423A9CFD400A6A139 /* libReact-RCTNetwork.a in Frameworks */,
+				C0ED396523A9CFD400A6A139 /* libReact-RCTSettings.a in Frameworks */,
+				C0ED396623A9CFD400A6A139 /* libReact-RCTText.a in Frameworks */,
+				C0ED396723A9CFD400A6A139 /* libReact-RCTVibration.a in Frameworks */,
+				C0ED396823A9CFD400A6A139 /* libReactCommon.a in Frameworks */,
+				C0ED396923A9CFD400A6A139 /* libRNGestureHandler.a in Frameworks */,
+				C0ED396A23A9CFD400A6A139 /* libRNReanimated.a in Frameworks */,
+				C0ED396B23A9CFD400A6A139 /* libRNVectorIcons.a in Frameworks */,
+				C0ED396C23A9CFD400A6A139 /* libYoga.a in Frameworks */,
+				8970F71062AEECF86E4F3A27 /* libPods-gympointmobTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0ED394E23A9CF9A00A6A139 /* libRNVectorIcons.a in Frameworks */,
+				C0ED394323A9CF9A00A6A139 /* libReact-RCTAnimation.a in Frameworks */,
+				C0ED393823A9CF9900A6A139 /* libPods-gympointmob-tvOSTests.a in Frameworks */,
+				C0ED393C23A9CF9900A6A139 /* libReact-Core.a in Frameworks */,
+				C0ED394223A9CF9A00A6A139 /* libReact-RCTActionSheet.a in Frameworks */,
+				C0ED394C23A9CF9A00A6A139 /* libRNGestureHandler.a in Frameworks */,
+				C0ED393B23A9CF9900A6A139 /* libRCTTypeSafety.a in Frameworks */,
+				C0ED393323A9CF9900A6A139 /* libDoubleConversion.a in Frameworks */,
+				C0ED393623A9CF9900A6A139 /* libglog.a in Frameworks */,
+				C0ED393A23A9CF9900A6A139 /* libPods-gympointmobTests.a in Frameworks */,
+				C0ED393D23A9CF9900A6A139 /* libReact-CoreModules.a in Frameworks */,
+				C0ED394F23A9CF9A00A6A139 /* libYoga.a in Frameworks */,
+				C0ED394423A9CF9A00A6A139 /* libReact-RCTBlob.a in Frameworks */,
+				C0ED394923A9CF9A00A6A139 /* libReact-RCTText.a in Frameworks */,
+				C0ED393923A9CF9900A6A139 /* libPods-gympointmob.a in Frameworks */,
+				C0ED394D23A9CF9A00A6A139 /* libRNReanimated.a in Frameworks */,
+				C0ED394B23A9CF9A00A6A139 /* libReactCommon.a in Frameworks */,
+				C0ED393F23A9CF9900A6A139 /* libReact-jsi.a in Frameworks */,
+				14ECA2EAB94D62CCA226B68A /* libPods-gympointmob.a in Frameworks */,
+				C0ED393E23A9CF9900A6A139 /* libReact-cxxreact.a in Frameworks */,
+				C0ED393723A9CF9900A6A139 /* libPods-gympointmob-tvOS.a in Frameworks */,
+				C0ED394123A9CF9900A6A139 /* libReact-jsinspector.a in Frameworks */,
+				C0ED394623A9CF9A00A6A139 /* libReact-RCTLinking.a in Frameworks */,
+				C0ED394823A9CF9A00A6A139 /* libReact-RCTSettings.a in Frameworks */,
+				C0ED393523A9CF9900A6A139 /* libFolly.a in Frameworks */,
+				C0ED394A23A9CF9A00A6A139 /* libReact-RCTVibration.a in Frameworks */,
+				C0ED394723A9CF9A00A6A139 /* libReact-RCTNetwork.a in Frameworks */,
+				C0ED394523A9CF9A00A6A139 /* libReact-RCTImage.a in Frameworks */,
+				C0ED393423A9CF9900A6A139 /* libFBReactNativeSpec.a in Frameworks */,
+				C0ED394023A9CF9900A6A139 /* libReact-jsiexecutor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E15E63F27A4FFDB9B52933 /* libPods-gympointmob-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C9E0ECE0ECE8C6A2726A63 /* libPods-gympointmob-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* gympointmobTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* gympointmobTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = gympointmobTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* gympointmob */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = gympointmob;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0ED393023A9CF8300A6A139 /* boost-for-react-native */,
+				C0ED38CF23A9CF8000A6A139 /* DoubleConversion */,
+				C0ED393123A9CF8300A6A139 /* Folly */,
+				C0ED38CE23A9CF8000A6A139 /* glog */,
+				C0ED393223A9CF8400A6A139 /* Headers */,
+				C0ED392F23A9CF8300A6A139 /* Local Podspecs */,
+				C0ED38D023A9CF8000A6A139 /* Manifest.lock */,
+				C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */,
+				C0ED38CD23A9CF8000A6A139 /* Target Support Files */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				32FB47A1FA6571CAFFCF4CFC /* libPods-gympointmob.a */,
+				3DCCE73DB7BD4ACAAC1B047D /* libPods-gympointmob-tvOS.a */,
+				28468D5368F1C106F5C8589C /* libPods-gympointmob-tvOSTests.a */,
+				4D091FD3E4730E394EAB1B58 /* libPods-gympointmobTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F99F3132ED04A81BCB208F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4A12475724C58BB15B772 /* AntDesign.ttf */,
+				D50E75E6597D4856B0D11E8F /* Entypo.ttf */,
+				35C0A1A1CCB4472E9F7E87BB /* EvilIcons.ttf */,
+				E61FFCCA83964299B51B101F /* Feather.ttf */,
+				532DFCF498A344B5ADC46FCC /* FontAwesome.ttf */,
+				E167A7ECAABB4391A3F259C1 /* FontAwesome5_Brands.ttf */,
+				16966DF4358A4A3CB0E53A5B /* FontAwesome5_Regular.ttf */,
+				F5991C54E3B343358ECC2072 /* FontAwesome5_Solid.ttf */,
+				77BD909EF191461A8808E573 /* Fontisto.ttf */,
+				3AECAA3630434DE184C9FF6D /* Foundation.ttf */,
+				7D87BE91EDBD4FF59BFA086A /* Ionicons.ttf */,
+				02DE288369B44D4490BB3CBB /* MaterialCommunityIcons.ttf */,
+				A880CD8CFA7844A89ABE9F2A /* MaterialIcons.ttf */,
+				C04582EF7F404FAD8CDA41FC /* Octicons.ttf */,
+				9EF970FE25934BEF881414B3 /* SimpleLineIcons.ttf */,
+				D9E00412CF0045E79D386491 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5D3118A069A1461C35F7F18E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF0D1291EA3FAC5F6DF8BF /* Pods-gympointmob.debug.xcconfig */,
+				33DCD211424D169AAF2F1C49 /* Pods-gympointmob.release.xcconfig */,
+				EE42049622CC4F7DFB1EAC42 /* Pods-gympointmob-tvOS.debug.xcconfig */,
+				020FFE99CB20A65F998BE1DD /* Pods-gympointmob-tvOS.release.xcconfig */,
+				D5401CDD15E67983D3758137 /* Pods-gympointmob-tvOSTests.debug.xcconfig */,
+				FBCFE5377340D62EEAD50168 /* Pods-gympointmob-tvOSTests.release.xcconfig */,
+				42C5FFC919F51DEFB8A12D82 /* Pods-gympointmobTests.debug.xcconfig */,
+				D1B70CCB23BFD4D06D94EF35 /* Pods-gympointmobTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* gympointmob */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* gympointmobTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				5D3118A069A1461C35F7F18E /* Pods */,
+				3F99F3132ED04A81BCB208F9 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* gympointmob.app */,
+				00E356EE1AD99517003FC87E /* gympointmobTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* gympointmob-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* gympointmob-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0ED38D223A9CF8000A6A139 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0ED38F623A9CF8100A6A139 /* libDoubleConversion.a */,
+				C0ED38F823A9CF8100A6A139 /* libFBReactNativeSpec.a */,
+				C0ED38FA23A9CF8100A6A139 /* libFolly.a */,
+				C0ED38FC23A9CF8100A6A139 /* libglog.a */,
+				C0ED38FE23A9CF8100A6A139 /* libPods-gympointmob.a */,
+				C0ED390023A9CF8100A6A139 /* libPods-gympointmob-tvOS.a */,
+				C0ED390223A9CF8100A6A139 /* libPods-gympointmob-tvOSTests.a */,
+				C0ED390423A9CF8100A6A139 /* libPods-gympointmobTests.a */,
+				C0ED390623A9CF8100A6A139 /* libRCTTypeSafety.a */,
+				C0ED390823A9CF8100A6A139 /* libReact-Core.a */,
+				C0ED390A23A9CF8100A6A139 /* libReact-CoreModules.a */,
+				C0ED390C23A9CF8100A6A139 /* libReact-cxxreact.a */,
+				C0ED390E23A9CF8100A6A139 /* libReact-jsi.a */,
+				C0ED391023A9CF8100A6A139 /* libReact-jsiexecutor.a */,
+				C0ED391223A9CF8100A6A139 /* libReact-jsinspector.a */,
+				C0ED391423A9CF8100A6A139 /* libReact-RCTActionSheet.a */,
+				C0ED391623A9CF8100A6A139 /* libReact-RCTAnimation.a */,
+				C0ED391823A9CF8100A6A139 /* libReact-RCTBlob.a */,
+				C0ED391A23A9CF8100A6A139 /* libReact-RCTImage.a */,
+				C0ED391C23A9CF8100A6A139 /* libReact-RCTLinking.a */,
+				C0ED391E23A9CF8100A6A139 /* libReact-RCTNetwork.a */,
+				C0ED392023A9CF8100A6A139 /* libReact-RCTSettings.a */,
+				C0ED392223A9CF8100A6A139 /* libReact-RCTText.a */,
+				C0ED392423A9CF8100A6A139 /* libReact-RCTVibration.a */,
+				C0ED392623A9CF8100A6A139 /* libReactCommon.a */,
+				C0ED392823A9CF8100A6A139 /* libRNGestureHandler.a */,
+				C0ED392A23A9CF8100A6A139 /* libRNReanimated.a */,
+				C0ED392C23A9CF8100A6A139 /* libRNVectorIcons.a */,
+				C0ED392E23A9CF8100A6A139 /* libYoga.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* gympointmobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "gympointmobTests" */;
+			buildPhases = (
+				1C6C806F284F35237E9DD00A /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = gympointmobTests;
+			productName = gympointmobTests;
+			productReference = 00E356EE1AD99517003FC87E /* gympointmobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* gympointmob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gympointmob" */;
+			buildPhases = (
+				DC37DAC40B10977B52764A49 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				9A4A0D4D0C02072D20016124 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gympointmob;
+			productName = gympointmob;
+			productReference = 13B07F961A680F5B00A75B9A /* gympointmob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* gympointmob-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "gympointmob-tvOS" */;
+			buildPhases = (
+				AB9F1A708F3A50D20ECE0E77 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gympointmob-tvOS";
+			productName = "gympointmob-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* gympointmob-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* gympointmob-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "gympointmob-tvOSTests" */;
+			buildPhases = (
+				17E6A9301FC5B777C9CAC8FC /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "gympointmob-tvOSTests";
+			productName = "gympointmob-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* gympointmob-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = DFFF27GQ9M;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = DFFF27GQ9M;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "gympointmob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C0ED38D223A9CF8000A6A139 /* Products */;
+					ProjectRef = C0ED38D123A9CF8000A6A139 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* gympointmob */,
+				00E356ED1AD99517003FC87E /* gympointmobTests */,
+				2D02E47A1E0B4A5D006451C7 /* gympointmob-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* gympointmob-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C0ED38F623A9CF8100A6A139 /* libDoubleConversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDoubleConversion.a;
+			remoteRef = C0ED38F523A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED38F823A9CF8100A6A139 /* libFBReactNativeSpec.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFBReactNativeSpec.a;
+			remoteRef = C0ED38F723A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED38FA23A9CF8100A6A139 /* libFolly.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFolly.a;
+			remoteRef = C0ED38F923A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED38FC23A9CF8100A6A139 /* libglog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglog.a;
+			remoteRef = C0ED38FB23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED38FE23A9CF8100A6A139 /* libPods-gympointmob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-gympointmob.a";
+			remoteRef = C0ED38FD23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390023A9CF8100A6A139 /* libPods-gympointmob-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-gympointmob-tvOS.a";
+			remoteRef = C0ED38FF23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390223A9CF8100A6A139 /* libPods-gympointmob-tvOSTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-gympointmob-tvOSTests.a";
+			remoteRef = C0ED390123A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390423A9CF8100A6A139 /* libPods-gympointmobTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-gympointmobTests.a";
+			remoteRef = C0ED390323A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390623A9CF8100A6A139 /* libRCTTypeSafety.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTTypeSafety.a;
+			remoteRef = C0ED390523A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390823A9CF8100A6A139 /* libReact-Core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-Core.a";
+			remoteRef = C0ED390723A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390A23A9CF8100A6A139 /* libReact-CoreModules.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-CoreModules.a";
+			remoteRef = C0ED390923A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390C23A9CF8100A6A139 /* libReact-cxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-cxxreact.a";
+			remoteRef = C0ED390B23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED390E23A9CF8100A6A139 /* libReact-jsi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-jsi.a";
+			remoteRef = C0ED390D23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391023A9CF8100A6A139 /* libReact-jsiexecutor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-jsiexecutor.a";
+			remoteRef = C0ED390F23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391223A9CF8100A6A139 /* libReact-jsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-jsinspector.a";
+			remoteRef = C0ED391123A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391423A9CF8100A6A139 /* libReact-RCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTActionSheet.a";
+			remoteRef = C0ED391323A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391623A9CF8100A6A139 /* libReact-RCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTAnimation.a";
+			remoteRef = C0ED391523A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391823A9CF8100A6A139 /* libReact-RCTBlob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTBlob.a";
+			remoteRef = C0ED391723A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391A23A9CF8100A6A139 /* libReact-RCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTImage.a";
+			remoteRef = C0ED391923A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391C23A9CF8100A6A139 /* libReact-RCTLinking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTLinking.a";
+			remoteRef = C0ED391B23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED391E23A9CF8100A6A139 /* libReact-RCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTNetwork.a";
+			remoteRef = C0ED391D23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392023A9CF8100A6A139 /* libReact-RCTSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTSettings.a";
+			remoteRef = C0ED391F23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392223A9CF8100A6A139 /* libReact-RCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTText.a";
+			remoteRef = C0ED392123A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392423A9CF8100A6A139 /* libReact-RCTVibration.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-RCTVibration.a";
+			remoteRef = C0ED392323A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392623A9CF8100A6A139 /* libReactCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactCommon.a;
+			remoteRef = C0ED392523A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392823A9CF8100A6A139 /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = C0ED392723A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392A23A9CF8100A6A139 /* libRNReanimated.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNReanimated.a;
+			remoteRef = C0ED392923A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392C23A9CF8100A6A139 /* libRNVectorIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNVectorIcons.a;
+			remoteRef = C0ED392B23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0ED392E23A9CF8100A6A139 /* libYoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYoga.a;
+			remoteRef = C0ED392D23A9CF8100A6A139 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		17E6A9301FC5B777C9CAC8FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gympointmob-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C6C806F284F35237E9DD00A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gympointmobTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		9A4A0D4D0C02072D20016124 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gympointmob/Pods-gympointmob-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gympointmob/Pods-gympointmob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9F1A708F3A50D20ECE0E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gympointmob-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC37DAC40B10977B52764A49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gympointmob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* gympointmobTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* gympointmobTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* gympointmob */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* gympointmob-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = gympointmob;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C5FFC919F51DEFB8A12D82 /* Pods-gympointmobTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DFFF27GQ9M;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gympointmobTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gympointmob.app/gympointmob";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B70CCB23BFD4D06D94EF35 /* Pods-gympointmobTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = DFFF27GQ9M;
+				INFOPLIST_FILE = gympointmobTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gympointmob.app/gympointmob";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4AF0D1291EA3FAC5F6DF8BF /* Pods-gympointmob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = DFFF27GQ9M;
+				INFOPLIST_FILE = gympointmob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = gympointmob;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DCD211424D169AAF2F1C49 /* Pods-gympointmob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DFFF27GQ9M;
+				INFOPLIST_FILE = gympointmob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = gympointmob;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE42049622CC4F7DFB1EAC42 /* Pods-gympointmob-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "gympointmob-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.gympointmob-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020FFE99CB20A65F998BE1DD /* Pods-gympointmob-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "gympointmob-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.gympointmob-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5401CDD15E67983D3758137 /* Pods-gympointmob-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "gympointmob-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.gympointmob-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gympointmob-tvOS.app/gympointmob-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCFE5377340D62EEAD50168 /* Pods-gympointmob-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "gympointmob-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.gympointmob-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gympointmob-tvOS.app/gympointmob-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "gympointmobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gympointmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "gympointmob-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "gympointmob-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "gympointmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
