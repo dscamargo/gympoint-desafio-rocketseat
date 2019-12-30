@@ -2,6 +2,8 @@ import produce from 'immer';
 import { format, parseISO } from 'date-fns';
 import pt from 'date-fns/locale/pt-BR';
 
+import { verde, vermelho } from '~/styles/colors';
+
 const INITIAL_STATE = {
   registers: [],
   registerDetails: {},
@@ -50,6 +52,7 @@ export default function initFunction(state = INITIAL_STATE, action) {
               }
             ),
             active: register.active ? 'Sim' : 'Não',
+            activeColor: register.active ? verde : vermelho,
           });
         });
 

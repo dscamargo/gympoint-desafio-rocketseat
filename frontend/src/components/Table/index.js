@@ -74,7 +74,7 @@ function Table({
                       <td>{item.plan && item.plan.title}</td>
                       <td>{item.start_date}</td>
                       <td>{item.end_date}</td>
-                      <td>{item.active}</td>
+                      <td style={{ color: item.activeColor }}>{item.active}</td>
                     </>
                   )}
 

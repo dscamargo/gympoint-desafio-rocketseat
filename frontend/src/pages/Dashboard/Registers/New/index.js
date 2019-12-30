@@ -118,7 +118,6 @@ export default function New() {
             required={planRequired && !selectedPlan}
           />
           <DatePicker
-            disabled
             size="24%"
             label="Data de início"
             value={startDate}
