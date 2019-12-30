@@ -1,0 +1,42 @@
+ <style>
+    .container strong{
+      color: #fff;
+    }
+
+    .container span{
+      color: #fff;
+      margin-left: 5px;
+    }
+
+    .logo{
+      width: 120px;
+      height: 85px;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    .container p{
+      color: #fff;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .question-container{
+      max-width: 650px;
+    }
+
+    .container strong.question{
+      color: #999
+    }
+  </style>
+
+    <strong>Olá {{studentName}}, tudo bem ?</strong><br><br>
+    <strong>Sua pergunta, realizada em {{questionDate}}, foi respondida por um de nossos professores.</strong>
+    <br>
+    <br>
+    <div class='question-container'>
+      <strong class='question'>Pergunta: </strong><span>{{question}}</span><br><br>
+      <strong class='question'>Resposta: </strong><span>{{answer}}</span>
+    </div>
+
+    <p>Qualquer dúvida, entre em contato conosco.</p>

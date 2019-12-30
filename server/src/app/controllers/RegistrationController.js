@@ -4,6 +4,8 @@ import * as Yup from 'yup';
 import Registration from '../models/Registration';
 import Student from '../models/Student';
 import Plan from '../models/Plan';
+import RegisterJob from '../jobs/RegisterMail';
+import Queue from '../../lib/Queue';
 
 class RegistrationController {
   async store(req, res) {
@@ -38,6 +40,13 @@ class RegistrationController {
         };
 
         const registration = await Registration.create(data);
+
+        await Queue.add(RegisterJob.key, {
+          student,
+          registration,
+          plan,
+          price,
+        });
 
         return res.status(201).json(registration);
       })

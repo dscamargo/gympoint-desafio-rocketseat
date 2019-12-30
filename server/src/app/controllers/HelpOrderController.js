@@ -4,6 +4,8 @@ import notFound from '../../utils/notFound';
 
 import HelpOrder from '../models/HelpOrders';
 import Student from '../models/Student';
+import AnswerJob from '../jobs/AnswerMail';
+import Queue from '../../lib/Queue';
 
 class HelpOrderController {
   async index(req, res) {
@@ -51,7 +53,9 @@ class HelpOrderController {
         const { answer } = body;
         const { id } = req.params;
 
-        const order = await HelpOrder.findByPk(id);
+        const order = await HelpOrder.findByPk(id, {
+          include: [{ model: Student, as: 'student' }],
+        });
 
         if (!order) {
           return notFound(res);
@@ -61,6 +65,10 @@ class HelpOrderController {
         order.answer_at = new Date();
 
         await order.save();
+
+        await Queue.add(AnswerJob.key, {
+          order,
+        });
 
         return res.status(200).json(order);
       })

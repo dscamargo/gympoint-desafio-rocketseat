@@ -1,0 +1,42 @@
+    <style>
+    body{
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      border: 2px solid #7159c1;
+    }
+
+    .container div {
+      display: flex;
+      width: 50%;
+      align-self: center;
+      margin-top: 5px;
+    }
+
+    .container span{
+      margin-left: 5px;
+    }
+
+    p,strong, span{
+      color: #fff;
+    }
+  </style>
+
+  <strong>Olá, {{student}}</strong>
+
+  <p>Sua matrícula foi efetivada com sucesso !!!!</p>
+
+  <div>
+    <strong>Plano: </strong><span>{{plan}}</span> <br>
+  </div>
+  <div>
+    <strong>Data de início: </strong><span>{{start}}</span><br>
+  </div>
+  <div>
+    <strong>Data de término: </strong><span>{{end}}</span> <br>
+  </div>
+  <div>
+    <strong>Valor: R$</strong><span> {{price}}</span> <br>
+  </div>
+
+  <p>Seja bem vindo.</p>

@@ -37,6 +37,12 @@ class CheckinController {
     const { page = 1, per_page = 25 } = req.query;
     const { id } = req.params;
 
+    const user = await Student.findByPk(id);
+
+    if (!user) {
+      return res.status(422).json({ error: 'Usuário não encontrado' });
+    }
+
     const { count: total, rows: checkins } = await Checkin.findAndCountAll({
       limit: per_page,
       offset: (page - 1) * per_page,
