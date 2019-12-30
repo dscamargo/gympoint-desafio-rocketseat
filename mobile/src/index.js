@@ -1,5 +1,11 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
+import * as Sentry from '@sentry/react-native';
+import {SENTRY_DSN} from 'react-native-dotenv';
+
+Sentry.init({
+  dsn: SENTRY_DSN,
+});
 
 import '~/config/ReactotronConfig';
 
