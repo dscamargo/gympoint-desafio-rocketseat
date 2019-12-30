@@ -9,50 +9,37 @@ import Queue from '../../lib/Queue';
 
 class RegistrationController {
   async store(req, res) {
-    const schema = Yup.object().shape({
-      student_id: Yup.number().required('O aluno é obrigatório'),
-      plan_id: Yup.number().required('Plano é obrigatório'),
-      start_date: Yup.string().required('Data de início é obrigatório'),
+    const { student_id, plan_id, start_date } = req.body;
+
+    const student = await Student.findByPk(student_id);
+
+    const plan = await Plan.findByPk(plan_id);
+
+    if (!student || !plan) {
+      return res.status(422).json({ error: 'Registro não encontrado' });
+    }
+
+    const end_date = addMonths(parseISO(start_date), plan.duration);
+    const price = Number(plan.duration) * Number(plan.price);
+
+    const data = {
+      student_id: Number(student_id),
+      plan_id: Number(plan_id),
+      start_date,
+      end_date: format(end_date, 'yyyy-MM-dd'),
+      price: Number(price.toFixed(2)),
+    };
+
+    const registration = await Registration.create(data);
+
+    await Queue.add(RegisterJob.key, {
+      student,
+      registration,
+      plan,
+      price,
     });
 
-    schema
-      .validate(req.body)
-      .then(async value => {
-        const { student_id, plan_id, start_date } = value;
-
-        const student = await Student.findByPk(student_id);
-
-        const plan = await Plan.findByPk(plan_id);
-
-        if (!student || !plan) {
-          return res.status(422).json({ error: 'Registro não encontrado' });
-        }
-
-        const end_date = addMonths(parseISO(start_date), plan.duration);
-        const price = Number(plan.duration) * Number(plan.price);
-
-        const data = {
-          student_id: Number(student_id),
-          plan_id: Number(plan_id),
-          start_date,
-          end_date: format(end_date, 'yyyy-MM-dd'),
-          price: Number(price.toFixed(2)),
-        };
-
-        const registration = await Registration.create(data);
-
-        await Queue.add(RegisterJob.key, {
-          student,
-          registration,
-          plan,
-          price,
-        });
-
-        return res.status(201).json(registration);
-      })
-      .catch(err => {
-        return res.status(422).json({ error: err.message });
-      });
+    return res.status(201).json(registration);
   }
 
   async index(req, res) {
@@ -65,7 +52,10 @@ class RegistrationController {
       limit: per_page,
       offset: (page - 1) * per_page,
       attributes: ['id', 'start_date', 'end_date', 'price', 'active'],
-      include: [{ model: Student, as: 'student' }, { model: Plan, as: 'plan' }],
+      include: [
+        { model: Student, as: 'student' },
+        { model: Plan, as: 'plan' },
+      ],
     });
 
     return res.status(200).json({
@@ -79,27 +69,15 @@ class RegistrationController {
   }
 
   async update(req, res) {
-    const schema = Yup.object().shape({
-      student_id: Yup.number(),
-      plan_id: Yup.number(),
-      start_date: Yup.string(),
-    });
-
-    const isValid = await schema.isValid(req.body);
-
-    if (!isValid) {
-      return res.status(422).json({ error: 'Invalid request body data' });
-    }
-
     const { id } = req.params;
 
     const registration = await Registration.findByPk(id);
 
     if (!registration) {
-      return res.status(422).json({ error: 'Registro não encontrado' });
+      return res.status(422).json({ error: 'Matricula não encontrada' });
     }
 
-    Object.keys(req.body).map(key => {
+    Object.keys(req.body).map(async key => {
       if (key) {
         registration[key] = req.body[key];
       }
@@ -114,7 +92,10 @@ class RegistrationController {
     const { id } = req.params;
 
     const registration = await Registration.findByPk(id, {
-      include: [{ model: Student, as: 'student' }, { model: Plan, as: 'plan' }],
+      include: [
+        { model: Student, as: 'student' },
+        { model: Plan, as: 'plan' },
+      ],
       attributes: ['id', 'start_date', 'end_date', 'price', 'active'],
     });
 

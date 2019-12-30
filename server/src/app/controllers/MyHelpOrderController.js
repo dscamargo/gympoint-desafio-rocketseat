@@ -6,29 +6,18 @@ import notFound from '../../utils/notFound';
 
 class MyHelpOrderController {
   async store(req, res) {
-    const schema = Yup.object().shape({
-      question: Yup.string().required('Pergunta é obrigatória'),
-    });
+    const { id } = req.params;
+    const { question } = req.body;
 
-    schema
-      .validate(req.body)
-      .then(async body => {
-        const { id } = req.params;
-        const { question } = body;
+    const student = await Student.findByPk(id);
 
-        const student = await Student.findByPk(id);
+    if (!student) {
+      return res.status(422).json({ error: 'Registro não encontrado' });
+    }
 
-        if (!student) {
-          return res.status(422).json({ error: 'Registro não encontrado' });
-        }
+    const order = await HelpOrder.create({ student_id: id, question });
 
-        const order = await HelpOrder.create({ student_id: id, question });
-
-        return res.status(201).json(order);
-      })
-      .catch(err => {
-        return res.status(422).json({ error: err.message });
-      });
+    return res.status(201).json(order);
   }
 
   async index(req, res) {

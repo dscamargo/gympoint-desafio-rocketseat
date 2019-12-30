@@ -4,24 +4,11 @@ import Plan from '../models/Plan';
 
 class PlanController {
   async store(req, res) {
-    const schema = Yup.object().shape({
-      title: Yup.string().required('Titulo é obrigatório'),
-      duration: Yup.number().required('Duração é obrigatório'),
-      price: Yup.number().required('Preço é obrigatório'),
-    });
+    const { title, duration, price } = req.body;
 
-    schema
-      .validate(req.body)
-      .then(async body => {
-        const { title, duration, price } = body;
+    const plan = await Plan.create({ title, duration, price });
 
-        const plan = await Plan.create({ title, duration, price });
-
-        return res.status(201).json(plan);
-      })
-      .catch(err => {
-        return res.status(422).json({ error: err.message });
-      });
+    return res.status(201).json(plan);
   }
 
   async index(req, res) {
@@ -61,18 +48,6 @@ class PlanController {
   }
 
   async update(req, res) {
-    const schema = Yup.object().shape({
-      title: Yup.string(),
-      duration: Yup.number(),
-      price: Yup.number(),
-    });
-
-    const isValid = await schema.isValid(req.body);
-
-    if (!isValid) {
-      return res.status(422).json({ error: 'Invalid request body data' });
-    }
-
     const { id } = req.params;
 
     const plan = await Plan.findByPk(id);

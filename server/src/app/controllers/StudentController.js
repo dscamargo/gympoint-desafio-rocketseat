@@ -4,20 +4,6 @@ import Student from '../models/Student';
 
 class StudentController {
   async store(req, res) {
-    const schema = Yup.object().shape({
-      age: Yup.number().required('Idade é obrigatório'),
-      weight: Yup.number().required('Peso é obrigatório'),
-      height: Yup.number().required('Altura é obrigatório'),
-      email: Yup.string().required('E-mail é obrigatório'),
-      name: Yup.string().required('Nome é obrigatório'),
-    });
-
-    const valid = await schema.isValid(req.body);
-
-    if (!valid) {
-      return res.status(422).json({ error: 'invalid body data' });
-    }
-
     const student = await Student.create(req.body);
 
     return res.status(201).json(student);
@@ -47,20 +33,6 @@ class StudentController {
   }
 
   async update(req, res) {
-    const schema = Yup.object().shape({
-      age: Yup.number(),
-      weight: Yup.number(),
-      height: Yup.number(),
-      email: Yup.string(),
-      name: Yup.string(),
-    });
-
-    const validate = await schema.isValid(req.body);
-
-    if (!validate) {
-      return res.status(422).json({ error: 'invalid data' });
-    }
-
     const { id } = req.params;
 
     const user = await Student.findByPk(id);

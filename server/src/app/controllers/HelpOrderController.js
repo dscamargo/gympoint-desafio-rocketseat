@@ -43,38 +43,27 @@ class HelpOrderController {
   }
 
   async update(req, res) {
-    const schema = Yup.object().shape({
-      answer: Yup.string().required('A resposta é obrigatória'),
+    const { answer } = req.body;
+    const { id } = req.params;
+
+    const order = await HelpOrder.findByPk(id, {
+      include: [{ model: Student, as: 'student' }],
     });
 
-    schema
-      .validate(req.body)
-      .then(async body => {
-        const { answer } = body;
-        const { id } = req.params;
+    if (!order) {
+      return notFound(res);
+    }
 
-        const order = await HelpOrder.findByPk(id, {
-          include: [{ model: Student, as: 'student' }],
-        });
+    order.answer = answer;
+    order.answer_at = new Date();
 
-        if (!order) {
-          return notFound(res);
-        }
+    await order.save();
 
-        order.answer = answer;
-        order.answer_at = new Date();
+    await Queue.add(AnswerJob.key, {
+      order,
+    });
 
-        await order.save();
-
-        await Queue.add(AnswerJob.key, {
-          order,
-        });
-
-        return res.status(200).json(order);
-      })
-      .catch(err => {
-        return res.json({ error: err.message });
-      });
+    return res.status(200).json(order);
   }
 
   async destroy(req, res) {
