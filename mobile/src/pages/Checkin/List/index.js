@@ -64,6 +64,7 @@ export default function List({navigation}) {
 
   function handleRefresh() {
     setPage(1);
+    dispatch(checkinsListRequest({id: user_id, page: 1}));
   }
 
   return (
