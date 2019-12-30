@@ -10,8 +10,6 @@ export function* getCheckins({data}) {
 
   const query = `?page=${page}&per_page=10`;
 
-  yield delay(500);
-
   try {
     const response = yield call(api.get, `/students/${id}/checkins${query}`);
     if (onSubmit) {

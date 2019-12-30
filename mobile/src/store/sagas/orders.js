@@ -9,8 +9,6 @@ export function* getOrders({data}) {
 
   const query = `?page=${page}&per_page=10`;
 
-  yield delay(500);
-
   try {
     const response = yield call(api.get, `/students/${id}/help-orders${query}`);
     yield put(OrdersActions.ordersGetSuccess(response.data));
