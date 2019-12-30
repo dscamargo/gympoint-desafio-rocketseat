@@ -54,6 +54,7 @@ export default function HelpOrders() {
 
   function onShowSizeChange(current, size) {
     dispatch(setPerPage(size));
+    dispatch(setPage(1));
   }
 
   function handlePageChange(page, pageSize) {
