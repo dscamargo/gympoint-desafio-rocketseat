@@ -51,3 +51,9 @@ export const ItemQuestion = styled.Text`
   margin-top: 20px;
   font-size: 16px;
 `;
+
+export const TitleContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
