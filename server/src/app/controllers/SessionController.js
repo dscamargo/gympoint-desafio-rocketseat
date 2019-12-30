@@ -23,7 +23,7 @@ class SessionController {
     const token = jwt.sign(
       { data: { id, email, name } },
       process.env.APP_SECRET,
-      { expiresIn: '1h' }
+      { expiresIn: process.env.JWT_EXPIRES_IN }
     );
 
     return res.json({ user, token });
