@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import ReduxToastr from 'react-redux-toastr';
 import { ConfigProvider } from 'antd';
 import ptBR from 'antd/es/locale/pt_BR';
+import * as Sentry from '@sentry/browser';
 
 import '~/config/reactotronConfig';
 
@@ -14,6 +15,8 @@ import history from '~/services/history';
 import Routes from '~/routes';
 
 import GlobalStyle from '~/styles/global';
+
+Sentry.init({ dsn: process.env.REACT_APP_SENTRY_DSN });
 
 export default function App() {
   return (
