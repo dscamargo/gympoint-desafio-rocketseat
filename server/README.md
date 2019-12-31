@@ -4,8 +4,8 @@ Passo a passo para instalação, configuração e execução.
 
 1 - Se estiver utilizando docker, inicie um container do postgres e do redis:
 
-```docker run postgres -p 5432:5432 -d kartoza/postgis``` \
-```docker run redis -p 6379:6379 -d redis:alpine```
+```docker run --name postgres -p 5432:5432 -d kartoza/postgis``` \
+```docker run --name redis -p 6379:6379 -d redis:alpine```
 
 2 - Instale as dependencias do projeto: ```yarn``` ou ```npm start```
 
