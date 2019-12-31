@@ -20,7 +20,14 @@ export function* getCheckins({data}) {
     }
   } catch (err) {
     yield put(CheckinsActions.checkinsListFailure());
-    Alert.alert(`${err.response.data.error}`);
+    Alert.alert(
+      'Atenção',
+      `${(err &&
+        err.response &&
+        err.response.data &&
+        err.response.data.error) ||
+        'Erro ao realizar login, tente novamente'}`,
+    );
   }
 }
 
