@@ -22,8 +22,9 @@ export default function() {
   const [titleRequired, setTitleRequired] = useState(false);
   const [priceRequired, setPriceRequired] = useState(false);
   const [durationRequired, setDurationRequired] = useState(false);
+
   useEffect(() => {
-    setTotal(Number(Number(price) * Number(duration)));
+    setTotal(Number(Number(price) * Number(duration)).toFixed(2));
   }, [price, duration]);
   function handleSubmit() {
     if (!title || !duration || !price) {

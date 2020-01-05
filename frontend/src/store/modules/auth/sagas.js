@@ -29,7 +29,12 @@ export function* signIn({ payload }) {
       toastrActions.add({
         type: 'error',
         title: 'Atenção',
-        message: error.response.data.error,
+        message:
+          (error &&
+            error.response &&
+            error.response.data &&
+            error.response.data.error) ||
+          'Problema na autenticação',
       })
     );
     yield put(signFailure());
