@@ -70,11 +70,21 @@ class RegistrationController {
 
   async update(req, res) {
     const { id } = req.params;
+    const { plan_id, student_id, start_date } = req.body;
 
     const registration = await Registration.findByPk(id);
-
     if (!registration) {
       return res.status(422).json({ error: 'Matricula não encontrada' });
+    }
+
+    const plan = await Plan.findByPk(plan_id);
+    if (!plan) {
+      return res.status(422).json({ error: 'Plano não encontrado' });
+    }
+
+    const student = await Student.findByPk(student_id);
+    if (!student) {
+      return res.status(422).json({ error: 'Aluno não encontrado' });
     }
 
     Object.keys(req.body).map(async key => {
@@ -82,6 +92,15 @@ class RegistrationController {
         registration[key] = req.body[key];
       }
     });
+
+    const end_date = format(
+      addMonths(parseISO(start_date), plan.duration),
+      'yyyy-MM-dd'
+    );
+    const price = Number(Number(plan.duration) * Number(plan.price)).toFixed(2);
+
+    registration.end_date = end_date;
+    registration.price = Number(price);
 
     await registration.save();
 
